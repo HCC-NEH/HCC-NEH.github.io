@@ -1,0 +1,32 @@
+body {
+    background-color:#0f3057;
+    color:#e7e7de;
+    font-family:verdana;
+    text-align:center;
+
+}
+
+div.content {
+    color: #e7e7de;
+    width: 70%;
+    text-align:justify;
+    text-indent:3em;
+    margin:auto;
+}
+
+h1 {
+    color: #00587a;
+}
+
+h2 {
+    color: #e7e7de;
+}
+
+a {
+    text-decoration: none;
+    color: #008891;
+}
+
+a:hover {
+    text-decoration: underline;
+}
