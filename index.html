@@ -6,6 +6,13 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+    <!-- Add support for Web Components to older browsers. -->
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <!-- Your application must load the Roboto and Material Icons fonts. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+
     <style>
         h1 {
             text-align: center;
@@ -23,6 +30,31 @@
 </head>
 
 <body>
+    <mwc-top-app-bar-fixed>
+        <mwc-icon-button icon="menu" slot="navigationIcon"></mwc-icon-button>
+        <div slot="title">Title</div>
+        <mwc-icon-button icon="file_download" slot="actionItems"></mwc-icon-button>
+        <mwc-icon-button icon="print" slot="actionItems"></mwc-icon-button>
+        <mwc-icon-button icon="favorite" slot="actionItems"></mwc-icon-button>
+        <div>
+            Hello world!
+        </div>
+    </mwc-top-app-bar-fixed>
+
+    <!-- The Material Web Components use standard JavaScript modules. -->
+    <script type="module">
+
+      // Importing this module registers <mwc-button> as an element that you
+      // can use in this page.
+      //
+      // Note this import is a bare module specifier, so it must be converted
+      // to a path using a server such as es-dev-server.
+      import '@material/mwc-top-app-bar-fixed';
+
+      // Standard DOM APIs work with Web Components just like they do for
+      // built-in elements.
+    </script>
+
     <!--This can be our real index, we'll transfer it over after we make some progress-->
     <h1><a href="/test_jill.html">To test Jill</a></h1>
     <h1><a href="/davis.html">To Joyce Davis</a></h1>
