@@ -5,4 +5,4 @@
 # world. 
 
 # We are using Visual Studio Code with a GitHub repository to make and host the static site
-# and we are using AWS for hosting our videos and potentially our images. 
+# and we are using AWS/S3 for hosting our images and Vimeo for videos. 
