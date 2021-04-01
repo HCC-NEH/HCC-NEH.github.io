@@ -1,13 +1,58 @@
 <html>
-    <head>
-        <title>HCC NEH</title>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel ="stylesheet" href="reflectionstyle.css">
-    </head>
 
-<body>
-    <h1>HCC NEH</h1>
-    <a href="/student_reflections.html">Reflections Menu</a>
-    </body>
+<head>
+    <title>HCC NEH</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body style="margin:0">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">HCC NEH</span>
+            </section>
+        </div>
+    </header>
+
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <aside class="mdc-drawer">
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="#">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic">inbox</i>
+                        <span class="mdc-list-item__text">Inbox</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <a href="/student_reflections.html">Reflections Menu</a>
+    </main>
+
+    <script>
+        mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'))
+
+        mdc.list.MDCList.attachTo(document.querySelector('.mdc-list'))
+
+        // mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'))
+
+        const listEl = document.querySelector('.mdc-drawer .mdc-list')
+        const mainContentEl = document.querySelector('.main-content')
+
+        listEl.addEventListener('click', (event) => {
+            mainContentEl.querySelector('input, button').focus()
+        })
+
+        document.body.addEventListener('MDCDrawer:closed', () => {
+            mainContentEl.querySelector('input, button').focus()
+        })
+    </script>
+</body>
+
 </html>
