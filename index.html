@@ -9,32 +9,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
-            display: flex;
-            height: 100vh;
-        }
-        
-        .mdc-drawer-app-content {
-            flex: auto;
-            overflow: auto;
-            position: relative;
-        }
-        
-        .main-content {
-            overflow: auto;
-            height: 100%;
-        }
-        
-        .app-bar {
-            position: absolute;
-        }
-        
-        .mdc-top-app-bar {
-            z-index: 7;
+            --mdc-theme-primary: #2196f3;
+            --mdc-theme-surface: #0069c0;
+            --mdc-theme-background: #262626;
+            --mdc-theme-on-primary: white;
+            --mdc-theme-on-secondary: blue;
+            --mdc-theme-on-surface: white;
+            --mdc-theme-text-primary-on-light: purple;
         }
     </style>
 </head>
 
-<body style="margin:0">
+<body style="margin:0" class="mdc-theme--background mdc-typography">
     <header class="mdc-top-app-bar app-bar" id="app-bar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -44,31 +30,32 @@
         </div>
     </header>
 
-
     <main class="mdc-top-app-bar--fixed-adjust">
         <aside class="mdc-drawer mdc-drawer--dismissible">
             <div class="mdc-drawer__content">
                 <nav class="mdc-list">
                     <a class="mdc-list-item" href="#">
-                        <span class="mdc-list-item__ripple"></span>
-                        <i class="material-icons mdc-list-item__graphic">delete_forever</i>
-                        <span class="mdc-list-item__text">Student Reflections Page</span>
+                        <div class="mdc-menu mdc-menu-surface">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic mdc-theme--on-surface">delete_forever</i>
+                            <span class="mdc-list-item__text mdc-theme--on-surface">Student Reflections Page</span>
+                        </div>
                     </a>
                     <a class="mdc-list-item" href="#">
                         <span class="mdc-list-item__ripple"></span>
-                        <i class="material-icons mdc-list-item__graphic">delete</i>
-                        <span class="mdc-list-item__text">Student Reflections Page</span>
+                        <i class="material-icons mdc-list-item__graphic mdc-theme--on-surface">delete</i>
+                        <span class="mdc-list-item__text mdc-theme--on-surface">Student Reflections Page</span>
                     </a>
                     <a class="mdc-list-item" href="#">
                         <span class="mdc-list-item__ripple"></span>
-                        <i class="material-icons mdc-list-item__graphic">archive</i>
-                        <span class="mdc-list-item__text">Student Reflections Page</span>
+                        <i class="material-icons mdc-list-item__graphic mdc-theme--on-surface">archive</i>
+                        <span class="mdc-list-item__text mdc-theme--on-surface">Student Reflections Page</span>
                     </a>
                 </nav>
             </div>
         </aside>
 
-        <main class="mdc-drawer-app-content mdc-typography" id="main-content">
+        <main class="mdc-drawer-app-content mdc-theme--text-primary-on-dark" id="main-content">
             <a href="/student_reflections.html">Reflections Menu</a>
             <p>this is content</p>
         </main>
@@ -76,11 +63,8 @@
     </main>
 
     <script>
-        // mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'))
-
+        // Lists
         mdc.list.MDCList.attachTo(document.querySelector('.mdc-list'))
-
-        const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer--dismissible'))
 
         const listEl = document.querySelector('.mdc-drawer .mdc-list')
         const mainContentEl = document.querySelector('.main-content')
@@ -88,15 +72,24 @@
         listEl.addEventListener('click', (event) => {
             mainContentEl.querySelector('input, button').focus()
         })
+
+        // Drawer
+        const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer--dismissible'))
+
         document.body.addEventListener('MDCDrawer:closed', () => {
             mainContentEl.querySelector('input, button').focus()
         })
 
+        // App bar
         const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
         topAppBar.setScrollTarget(document.getElementById('main-content'));
         topAppBar.listen('MDCTopAppBar:nav', () => {
             drawer.open = !drawer.open;
         });
+
+        // Dropdown menus
+        const menu = new mdc.menu.MDCMenu(document.querySelector('.mdc-menu'));
+        menu.open = true;
     </script>
 </body>
 
