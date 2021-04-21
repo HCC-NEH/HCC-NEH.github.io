@@ -1,0 +1,37 @@
+<body style="margin:0" class="mdc-theme--background mdc-typography">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">HCC NEH</span>
+            </section>
+        </div>
+    </header>
+
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <aside class="mdc-drawer mdc-drawer--dismissible">
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="#">
+                        <div class="mdc-menu mdc-menu-surface">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic mdc-theme--on-surface">delete_forever</i>
+                            <span class="mdc-list-item__text mdc-theme--on-surface">Student Reflections Page</span>
+                        </div>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic mdc-theme--on-surface">delete</i>
+                        <span class="mdc-list-item__text mdc-theme--on-surface">Student Reflections Page</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic mdc-theme--on-surface">archive</i>
+                        <span class="mdc-list-item__text mdc-theme--on-surface">Student Reflections Page</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="mdc-drawer-app-content mdc-theme--text-primary-on-dark" id="main-content">
+            <h1>{{ include.student }}</h1>
