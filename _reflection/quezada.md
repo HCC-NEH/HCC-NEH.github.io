@@ -1,0 +1,7 @@
+---
+layout: default
+category: school
+student: Margarita Quezada
+---
+
+The students mentioned above had great success in life. Most of them graduated from college and preserved their African American pride.  Despite countless obstacles, many graduates from HDGCS persevered, reaching enormous personal and professional achievement.  In 2016,Havre de Grace Colored School Foundation formed “to remember, promote, and preserve therich history and legacy of Havre de Grace Colored School.  "All this information is remarkable and helps us understand how the civil rights movement occurred in Harford County and the history of the community.  Quotes from the students: "Be careful how to talk to people”-Joyce Cevis-“Try not to do name calling”-Joyce Cevis-“Study harder”-Gary Lee-“follow the golden rules  – treat others how you want to be treated”-Leonora Robinson-These quotes illuminate how people need to respect each other and be kind to one another, an aspect that society needs today. 

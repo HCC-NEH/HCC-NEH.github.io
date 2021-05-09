@@ -1,0 +1,9 @@
+---
+layout: default
+category: school
+student: Hunter Blair
+---
+
+https://hblair350.wixsite.com/website/my-project
+
+Above is my url for my website, I hope you guys enjoy it! I made a informational website with a interactive blog, photos, additional links to videos and such to follow, and an informational tab.  Throughout this project I learned a lot about Harford County (I’m not from here), their beginnings in fighting racism and desegregating schools.  I learned that they were one of the last counties in America to convert to desegregated schools.  I also learned that there was a community in Havre de Grace that accepted anyone black or white. I also learned how to create a website which will be helpful sometime in the future!  

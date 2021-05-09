@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.student }} | NEH</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="toc">
+        <h1>Reflections</h1>
+        <ul>
+            <li> School Desegregation
+                <ul>
+                    {% for page in site.reflection %}
+                    {% if page.category == "school" %}
+                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            <li> Business Desegregation
+                <ul>
+                    {% for page in site.reflection %}
+                    {% if page.category == "business" %}
+                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            <li> Fair Housing Act
+                <ul>
+                    {% for page in site.reflection %}
+                    {% if page.category == "housing" %}
+                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            <li> Reflections
+                <ul>
+                    {% for page in site.reflection %}
+                    {% if page.category == blank? %}
+                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+    {{ content }}
+</body>
+
+</html>

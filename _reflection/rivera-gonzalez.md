@@ -1,0 +1,7 @@
+---
+layout: default
+category: 
+student: Danishka Rivera-Gonzalez
+---
+
+The Humanities Careers are supported by the Harford Civil Rights Projects and My College Success Network. The first presenter was Dr. Iris Barnes and she is a curator at the Lily Carol Jackson Museum at Morgan State University.  She started off by talking about a civil rights story that happened in Harford County. The story was of a black woman that was kidnapped and accused of being a runaway slave even though there was evidence that she was a free woman.  Dr. Barnes talks about what lessons she's learned that she wants us to learn. One of those lessons being “Develop talent with education and training”.  She talks about how her sister gave her a book called The Black Book and that there was a picture in it of a black man that had been lynched and then burned.  She said this picture stuck with her and it influenced her into being interested in humanities. While working in the Maryland Lynching Memorial,  Dr. Barnes was doing research and she found out who the lynched man in the picture was. The man's name was William Brown. Dr. James Karmel says that there are many key skills in jobs that require communication, creativity, research/information literacy, media skills, writing, reading all lend themselves to Humanities majors.  A lot of careers that Humanities majors find themselves in include journalism, education, media, museums and many more. 

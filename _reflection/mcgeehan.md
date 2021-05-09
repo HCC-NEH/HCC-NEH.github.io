@@ -1,0 +1,9 @@
+---
+layout: default
+category: 
+student: Brett McGeehan
+---
+
+The HCRP project that we completed with our groups was definitely no easy task.  Though we were unable to have any face-to-face meetings or discussions, we were able to conduct research on housing and employment of African Americans in Harford County, Maryland.  Our goal was to evaluate our research to determine the levels of housing and job equality in our home county.  Our research concluded that while there has been effort shown by Harford County officials to create fair housing opportunities for African Americans and other minorities,  minority families are still less likely to own a home than white families.  Another conclusion that our group came to was that African Americans on average make about 79% of what a white family makes in Harford County.  While the income gap has closed a considerate amount since 1970, there is clearly still much work to do. 
+
+I think this project provided a very unique opportunity to research something that typically gets swept under the rug.  Not many people are aware of the history in Harford County before the Fair Housing Act of 1970, making them ignorant to the struggles that African American and minority families face here in Harford County.  I believe given the circumstances, our group did a fairly good job at communicating with each other and coming together to put together a good paper which accurately depicts the conclusions that we found.

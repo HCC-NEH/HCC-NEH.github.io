@@ -1,0 +1,7 @@
+---
+layout: default
+category: 
+student: Ethan Jew
+---
+
+The African American community did not have anything equal to the white community. For this reason, this was why African Americans had to challenge the system of racism that was put on them against their will.  Challenging the school like in the Pettit case was necessary to bring about change and create a more equal society.  If not for Pettit and others challenging the school system in Harford County, we may still see segregation to this day. Just because something is made into law does not mean that it can always be enforced.  For example, a company can reject a minority applicant because of his/her race but claims the rejection was due to the lack of qualification in the resume.  This is what makes racism so dangerous because sometimes you can’t even detect it and that it is a mindset. It is illegal to discriminate against someone based on race, but in this situation, it is difficult to enforce.  Racism still exists in this country, and more change needs to happen. The US has made progress to try to bring equal rights for minorities, but as you can see from the George Floyd protests, a lot more still has to be done.  Maybe people now don’t see their inherent racist actions, but 100 years from now people will look back at this time and will see flaws that people don’t see right now. 
