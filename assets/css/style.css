@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background: #222;
+    color: white;
+}
+
+.toc a:link, .toc a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color:rgb(164, 125, 255);
+}
+
+a:visited {
+    color:rgb(255, 79, 255);
+}
+
+/* Table of contents */
+.toc {
+    background: #444;
+    font-family: montserrat, sans;
+
+    padding-left: 16px;
+    top: 0;
+    overflow-y: scroll !important;
+    max-height: 100%;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.toc::-webkit-scrollbar {
+  display: none;
+}
+
+
+.toc > ul {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.toc > ul > li {
+    margin-top: 10px;
+}
+
+.toc > ul > li > ul {
+    font-weight: normal;
+    line-height: 19px;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.content {
+    margin: 24px;
+}
+
+.name, .reftitle {
+    font-family: Montserrat, sans;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 24px;
+}
+
+.text {
+    font-family: Roboto, sans;
+}
+
+/* Desktop columns */
+@media (min-width: 768px) {
+    .toc {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-left: 295px;
+    }
+}
+
+@media (max-width: 767px) {
+    .toc-hidden {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #222;
+}

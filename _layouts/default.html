@@ -4,54 +4,62 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.student }} | NEH</title>
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="toc">
-        <h1>Reflections</h1>
-        <ul>
-            <li> School Desegregation
-                <ul>
-                    {% for page in site.reflection %}
-                    {% if page.category == "school" %}
-                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </li>
-            <li> Business Desegregation
-                <ul>
-                    {% for page in site.reflection %}
-                    {% if page.category == "business" %}
-                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </li>
-            <li> Fair Housing Act
-                <ul>
-                    {% for page in site.reflection %}
-                    {% if page.category == "housing" %}
-                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </li>
-            <li> Reflections
-                <ul>
-                    {% for page in site.reflection %}
-                    {% if page.category == blank? %}
-                    <li><a href="{{ page.url }}">{{ page.student }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </li>
-        </ul>
+    <div class="container">
+        <div class="toc">
+            <h1 class="reftitle" onclick="togglemenu()">Reflections</h1>
+            <ul id="toc" class="toc-hidden">
+                <li> School Desegregation
+                    <ul>
+                        {% for page in site.reflection %} {% if page.category == "school" %}
+                        <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+                <li> Business Desegregation
+                    <ul>
+                        {% for page in site.reflection %} {% if page.category == "business" %}
+                        <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+                <li> Fair Housing Act
+                    <ul>
+                        {% for page in site.reflection %} {% if page.category == "housing" %}
+                        <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+                <li> Reflections
+                    <ul>
+                        {% for page in site.reflection %} {% if page.category == blank? %}
+                        <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <span class="name">{{ page.student }}</span>
+            <div class="text">
+                {{ content }}
+            </div>
+        </div>
     </div>
-    {{ content }}
+    <script>
+        function togglemenu() {
+            if (window.innerWidth < 768) {
+                toc = document.getElementById('toc')
+                toc.classList.toggle('toc-hidden')
+            }
+        }
+    </script>
 </body>
 
 </html>
