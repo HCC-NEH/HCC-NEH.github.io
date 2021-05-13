@@ -15,30 +15,38 @@
         <div class="toc">
             <h1 class="reftitle" onclick="togglemenu()">Reflections</h1>
             <ul id="toc" class="toc-hidden">
-                <li> School Desegregation
+                <li><a href="/">Home</a></li>
+                <li>School Desegregation
                     <ul>
                         {% for page in site.reflection %} {% if page.category == "school" %}
                         <li><a href="{{ page.url }}">{{ page.student }}</a></li>
                         {% endif %} {% endfor %}
                     </ul>
                 </li>
-                <li> Business Desegregation
+                <li>Business Desegregation
                     <ul>
                         {% for page in site.reflection %} {% if page.category == "business" %}
                         <li><a href="{{ page.url }}">{{ page.student }}</a></li>
                         {% endif %} {% endfor %}
                     </ul>
                 </li>
-                <li> Fair Housing Act
+                <li>Fair Housing Act
                     <ul>
                         {% for page in site.reflection %} {% if page.category == "housing" %}
                         <li><a href="{{ page.url }}">{{ page.student }}</a></li>
                         {% endif %} {% endfor %}
                     </ul>
                 </li>
-                <li> Reflections
+                <li>Reflections
                     <ul>
                         {% for page in site.reflection %} {% if page.category == blank? %}
+                        <li><a href="{{ page.url }}">{{ page.student }}</a></li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+                <li>Videos
+                    <ul>
+                        {% for page in site.reflection %} {% if page.category == "video" %}
                         <li><a href="{{ page.url }}">{{ page.student }}</a></li>
                         {% endif %} {% endfor %}
                     </ul>
