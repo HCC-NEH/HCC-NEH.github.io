@@ -61,11 +61,17 @@ ul {
     margin: 24px;
 }
 
-.name, .reftitle {
+h1, .name, .reftitle {
     font-family: Montserrat, sans;
     font-weight: bold;
     font-size: xx-large;
     margin-top: 24px;
+}
+
+h2 {
+    font-family: Montserrat, sans;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .text {
