@@ -14,11 +14,11 @@ The school board of Harford County scheduled a four-year program which would beg
 
 All of the events and topics that I have talked about are all helpful and beneficial to learning about the different problems with education in the 1900’s.  Desegregation in schools was a huge issue at first and then later in the 1900’s towards the end of the 1900’s. The teachers eventually had a better break in working with each other.  
 
-Citations: https://search-proquest-com.ezproxy.harford.edu/hnpbaltimoresun/docview/540074828/2D520713E4794CB8PQ/2?accountid=11292 
+Citations: [https://search-proquest-com.ezproxy.harford.edu/hnpbaltimoresun/docview/540074828/2D520713E4794CB8PQ/2?accountid=11292](https://search-proquest-com.ezproxy.harford.edu/hnpbaltimoresun/docview/540074828/2D520713E4794CB8PQ/2?accountid=11292) 
 
-https://www.pbs.org/onlyateacher/timeline.html 
+[https://www.pbs.org/onlyateacher/timeline.html](https://www.pbs.org/onlyateacher/timeline.html) 
 
-https://www.encyclopedia.com/social-sciences/culture-magazines/1950s-education-topics-news 
+[https://www.encyclopedia.com/social-sciences/culture-magazines/1950s-education-topics-news](https://www.encyclopedia.com/social-sciences/culture-magazines/1950s-education-topics-news) 
 
-https://search-proquest-com.ezproxy.harford.edu/hnpbaltimoresun/docview/1112225550/2D520713E4794CB8PQ/5?accountid=11292: 
+[https://search-proquest-com.ezproxy.harford.edu/hnpbaltimoresun/docview/1112225550/2D520713E4794CB8PQ/5?accountid=11292:](https://search-proquest-com.ezproxy.harford.edu/hnpbaltimoresun/docview/1112225550/2D520713E4794CB8PQ/5?accountid=11292:) 
 
